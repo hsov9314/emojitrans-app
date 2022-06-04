@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>絵文字翻訳</title>
+  </head>
+  <body>
+    <h1>絵文字翻訳</h1>
+    <form action="/" method="post">
+        <dic class="flex">
+        <div class="flex-textarea">
+            <h3>元のテキスト</h3>
+            <textarea name = "origin" placeholder="" class="form_origin" cols=70 rows=10>{{origin_text}}</textarea>
+        </div>
+
+        <div class="flex-button">
+            <input type="submit" value="翻訳" class="btn btn-square" />
+        </div>
+
+        <div class="flex-textarea">
+            <h3>翻訳後のテキスト</h3>
+            <textarea name = "translated" placeholder="" class="form_trans" cols=70 rows=10>{{translated_text}}</textarea>
+        </div>
+        </div>
+    </form>
+  </body>
+</html>
